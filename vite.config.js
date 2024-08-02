@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig(({ command }) => {
   return {
@@ -25,6 +26,17 @@ export default defineConfig(({ command }) => {
       },
       outDir: '../dist',
     },
-    plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+    plugins: [
+      injectHTML(),
+      FullReload(['./src/**/**.html']),
+      viteStaticCopy({
+        targets: [
+          {
+            src: 'js/**',
+            dest: 'js',
+          },
+        ],
+      }),
+    ],
   };
 });

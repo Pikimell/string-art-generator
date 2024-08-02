@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "vite build --base=/circles/",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^4.5.2",
-    "glob": "^8.1.0"
+    "glob": "^8.1.0",
+    "vite-plugin-static-copy": "^1.0.6"
   },
   "author": "Volodymyr Pashchenko <volodkaposhta@gmail.com>",
   "license": "ISC",
