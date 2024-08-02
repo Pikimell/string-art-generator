@@ -6,33 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>String Art Bot</title>
     <link rel="icon" href="https://img.icons8.com/color/344/free-bsd.png" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/controls.css" />
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/stringbot.css" />
   </head>
   <body>
     <div class="controls">
-      <form class="formdata js-form">
+      <form class="form-data js-form">
         <label>
           Вкл/Викл: <input type="checkbox" class="js-visible-canvas" />
         </label>
-        <textarea name="data"></textarea>
-        <button type="submit">LOAD</button>
+        <textarea name="data" class="form-control"></textarea>
+        <button type="submit" class="btn btn-primary">LOAD</button>
       </form>
-      <form class="formdata js-form1">
-        <input type="number" name="point" />
-        <input type="number" name="count" />
-        <input type="number" name="delay" />
-        <button type="submit">LOAD</button>
+
+      <form class="form-data js-form1">
+        <input type="number" name="point" class="form-control" />
+        <input type="number" name="count" class="form-control" />
+        <input type="number" name="delay" class="form-control" />
+        <button type="submit" class="btn btn-primary">LOAD</button>
       </form>
-      <div class="fb fb-h js-btn">
-        <button class="btn" data-value="prev">Prev</button>
-        <button class="btn" data-value="next">Next</button>
+
+      <div class="fb js-btn">
+        <button class="btn btn-primary" data-value="prev">Prev</button>
+        <button class="btn btn-primary" data-value="next">Next</button>
       </div>
 
-      <input type="file" class="js-audio" />
-      <audio class="js-player" controls loop src="./files/Wednesday.mp3">
-        <a href="./files/Wednesday.mp3"> Download audio </a>
+      <input type="file" class="js-audio form-control" />
+      <audio class="js-player" controls loop src="./assets/Wednesday.mp3">
+        <a href="./assets/Wednesday.mp3"> Download audio </a>
       </audio>
     </div>
 

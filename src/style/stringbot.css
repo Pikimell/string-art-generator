@@ -1,0 +1,73 @@
+.canvas {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0;
+
+  background-color: #fff;
+}
+
+.controls {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  bottom: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+  min-width: 350px;
+  gap: 10px;
+  padding: 30px;
+  overflow: hidden;
+}
+.form-data {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  gap: 5px;
+}
+
+.form-data textarea {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.fb {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  gap: 3px;
+}
+
+.fb-h {
+  flex-direction: column;
+}
+@media (max-width: 1000px) {
+  .canvas {
+    left: -156px;
+    top: 84vh;
+    transform: scale(0.5);
+  }
+  .btn {
+    width: 90vw;
+    height: 20vh;
+    font-size: 30;
+  }
+  .controls {
+    left: 0;
+    right: 0;
+    height: 90vh;
+  }
+}
