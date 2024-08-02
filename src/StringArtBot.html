@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Art Bot</title>
+    <link rel="icon" href="https://img.icons8.com/color/344/free-bsd.png" />
+
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="controls">
+      <form class="formdata js-form">
+        <label>
+          Вкл/Викл: <input type="checkbox" class="js-visible-canvas" />
+        </label>
+        <textarea name="data"></textarea>
+        <button type="submit">LOAD</button>
+      </form>
+      <form class="formdata js-form1">
+        <input type="number" name="point" />
+        <input type="number" name="count" />
+        <input type="number" name="delay" />
+        <button type="submit">LOAD</button>
+      </form>
+      <div class="fb fb-h js-btn">
+        <button class="btn" data-value="prev">Prev</button>
+        <button class="btn" data-value="next">Next</button>
+      </div>
+
+      <input type="file" class="js-audio" />
+      <audio class="js-player" controls loop src="./files/Wednesday.mp3">
+        <a href="./files/Wednesday.mp3"> Download audio </a>
+      </audio>
+    </div>
+
+    <canvas class="canvas js-canvas" width="700" height="700"> </canvas>
+  </body>
+</html>

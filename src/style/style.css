@@ -1,0 +1,114 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff6c;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+
+.generator {
+  display: table;
+  margin: 0 auto;
+  position: relative;
+
+  backdrop-filter: blur(20px);
+  background: #ffffff6c;
+  border-radius: 10px;
+}
+
+.controls {
+  display: table-cell;
+  width: 280px;
+  vertical-align: top;
+  padding-top: 10px;
+  background: #e9ecef;
+
+  backdrop-filter: blur(20px);
+  background: #ffffff6c;
+  border-radius: 10px;
+}
+
+.view {
+  display: table-cell;
+  width: min(85vh, 50vw);
+  vertical-align: top;
+  padding: 10px 5px;
+}
+
+.generator input,
+.generator select,
+.generator label {
+  font-family: Ubuntu;
+  font-size: 18px;
+}
+
+.view canvas {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.centered {
+  text-align: center !important;
+}
+
+.no-top-padding {
+  padding-top: 0 !important;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.drag-drop {
+  background: #e9ecef88;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 2.5em;
+  color: #0062cc;
+  pointer-events: none;
+  user-select: none;
+}
+
+.drag-drop-table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.drag-drop-table div {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  .generator {
+    display: block;
+  }
+
+  .view,
+  .controls {
+    display: block;
+    width: auto;
+  }
+
+  .view canvas {
+    width: 100%;
+    max-width: 600px !important;
+    max-height: 600px !important;
+    aspect-ratio: 1 / 1;
+  }
+}

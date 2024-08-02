@@ -1,0 +1,21 @@
+{
+  "name": "circles",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build --base=/circles/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.5.2",
+    "glob": "^8.1.0"
+  },
+  "author": "Volodymyr Pashchenko <volodkaposhta@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-html-inject": "^1.0.1"
+  }
+}
