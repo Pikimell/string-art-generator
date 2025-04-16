@@ -14,7 +14,7 @@
     "vite": "^5.3.5",
     "vite-plugin-static-copy": "^1.0.6"
   },
-  "author": "Volodymyr Pashchenko <volodkaposhta@gmail.com>",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "firebase": "^11.2.0",
