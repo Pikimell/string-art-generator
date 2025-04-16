@@ -1,0 +1,17 @@
+.art {
+  width: 100%;
+  height: fit-content;
+  border: 1px solid var(--color-border); /* Колір бордерів */
+  border-radius: var(--border-radius-medium); /* Середній радіус */
+  margin-top: var(--spacing-medium); /* Середній відступ */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--spacing-small); /* Маленький відступ */
+}
+
+.art canvas {
+  margin-top: var(--spacing-medium); /* Середній відступ */
+  width: 650px;
+  height: 650px;
+}

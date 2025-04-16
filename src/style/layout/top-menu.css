@@ -1,0 +1,13 @@
+.top-menu {
+  height: 70px;
+  border: 1px solid var(--color-border); /* Колір бордерів */
+  border-radius: var(--border-radius-medium); /* Середній радіус */
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-small); /* Маленький відступ */
+  padding: 0 var(--spacing-small); /* Маленький відступ */
+}
+
+#save-box {
+  display: flex;
+}

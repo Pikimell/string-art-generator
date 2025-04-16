@@ -1,0 +1,8 @@
+.art-name {
+  background-color: transparent;
+  margin: 10px;
+  width: 96%;
+  font-size: var(--font-size-large);
+  border: none;
+  text-align: center;
+}

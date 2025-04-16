@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color-primary); /* Основний фон */
+  color: var(--font-color-primary); /* Основний колір шрифту */
+  width: 100%;
+  height: 84px;
+  border-radius: 0 0 var(--border-radius-large) var(--border-radius-large); /* Великий радіус */
+  margin-bottom: var(--spacing-medium); /* Середній відступ */
+}
+
+.header * {
+  color: var(--font-color-primary); /* Основний колір шрифту */
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 var(--spacing-medium); /* Середній відступ */
+}
+
+.base-url {
+  font-size: var(--font-size-large); /* Великий розмір шрифту */
+  outline: none;
+  border: none;
+}
+
+.base-url:hover {
+  color: var(--font-color-primary); /* Основний колір шрифту */
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.link {
+  transition: all var(--transition-speed-fast); /* Швидкий перехід */
+  padding: 0 var(--spacing-small); /* Маленький відступ */
+}
+
+.link:hover {
+  color: var(--color-accent); /* Акцентний колір */
+  border: none;
+  text-decoration: none;
+}
+
+.link.active {
+  color: var(--color-accent); /* Акцентний колір */
+  outline: none;
+  border: none;
+  transform: scale(1.01);
+}

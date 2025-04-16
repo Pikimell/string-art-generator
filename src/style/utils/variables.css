@@ -1,0 +1,43 @@
+:root {
+  /* Основні кольори */
+  --bg-color-primary: black;
+  --bg-color-secondary: white;
+
+  --font-color-primary: white;
+  --font-color-secondary: black;
+
+  /* Основні кольори */
+  --primary-color: #272b43; /* Основний колір */
+  --color-secondary: #ffc107; /* Вторинний колір */
+  --color-accent: rgb(255, 71, 71); /* Акцентний колір */
+  --color-background: #f9f9f9; /* Фон */
+  --color-text: #212121; /* Основний текст */
+  --color-text-light: #757575; /* Світлий текст */
+  --color-border: #e0e0e0; /* Колір бордерів */
+
+  /* Шрифти */
+  --font-primary: 'Roboto', sans-serif; /* Основний шрифт */
+  --font-secondary: 'Open Sans', sans-serif; /* Вторинний шрифт */
+  --font-size-base: 16px; /* Базовий розмір шрифту */
+  --font-size-small: 14px; /* Маленький шрифт */
+  --font-size-large: 18px; /* Великий шрифт */
+
+  /* Відступи */
+  --spacing-small: 8px; /* Маленький відступ */
+  --spacing-medium: 16px; /* Середній відступ */
+  --spacing-large: 24px; /* Великий відступ */
+
+  /* Бордери */
+  --border-radius-small: 4px; /* Малий радіус */
+  --border-radius-medium: 8px; /* Середній радіус */
+  --border-radius-large: 16px; /* Великий радіус */
+
+  /* Тіні */
+  --box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легка тінь */
+  --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2); /* Середня тінь */
+
+  /* Швидкість анімацій */
+  --transition-speed-fast: 0.2s; /* Швидка анімація */
+  --transition-speed-medium: 0.4s; /* Середня анімація */
+  --transition-speed-slow: 0.6s; /* Повільна анімація */
+}

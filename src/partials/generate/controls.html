@@ -1,0 +1,186 @@
+<div class="main-controls">
+  <div id="controls-box">
+    <!-- Тип форми -->
+    <div class="control-group">
+      <h3>Параметри форми</h3>
+      <div class="control-block">
+        <label
+          ><b>Форма</b>
+          <select id="form-type-box" disabled>
+            <option value="circle" selected>коло</option>
+            <option value="rect">квадрат</option>
+            <option value="album">альбом</option>
+            <option value="portrait">портрет</option>
+            <option value="image">по зображенню</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <!-- Візуальні параметри -->
+    <div class="control-group">
+      <h3>Візуальні параметри</h3>
+
+      <div class="control-block">
+        <label>
+          <b>Розмір</b><br />
+          <input
+            type="range"
+            id="size-box"
+            value="1"
+            min="0.10"
+            max="25"
+            step="0.10"
+            disabled
+          />
+        </label>
+      </div>
+      <div class="control-block">
+        <label
+          ><b>Контрастність</b><br />
+          <input
+            type="range"
+            id="contrast-box"
+            value="0"
+            min="-100"
+            max="100"
+            step="5"
+            disabled
+          />
+        </label>
+      </div>
+      <div class="control-block">
+        <label
+          ><b>Яскравість</b><br />
+          <input
+            type="range"
+            id="brightness-box"
+            value="0"
+            min="-100"
+            max="100"
+            step="5"
+            disabled
+          />
+        </label>
+      </div>
+
+      <label class="checkbox-container">
+        <div class="checkbox-wrapper-45">
+          <input type="checkbox" id="invert-box" />
+          <label class="cbx" for="invert-box">
+            <div class="flip">
+              <div class="front"></div>
+              <div class="back">
+                <svg width="16" height="14" viewBox="0 0 16 14">
+                  <path d="M2 8.5L6 12.5L14 1.5"></path>
+                </svg>
+              </div>
+            </div>
+          </label>
+        </div>
+        <p>Інвертувати яскравість</p>
+      </label>
+
+      <label class="checkbox-container">
+        <div class="checkbox-wrapper-45">
+          <input type="checkbox" id="draw-box" />
+          <label class="cbx" for="draw-box">
+            <div class="flip">
+              <div class="front"></div>
+              <div class="back">
+                <svg width="16" height="14" viewBox="0 0 16 14">
+                  <path d="M2 8.5L6 12.5L14 1.5"></path>
+                </svg>
+              </div>
+            </div>
+          </label>
+        </div>
+        <p>Малювати лінії</p>
+      </label>
+    </div>
+
+    <!-- Цвяхи -->
+    <div class="control-group">
+      <h3>Цвяхи</h3>
+      <div class="control-block">
+        <label
+          ><b>Розташування цвяхів</b>
+          <select id="nails-mode-box" disabled>
+            <option value="border" selected>на грані</option>
+            <option value="grid">у вигляді сітки</option>
+            <option value="random">випадково</option>
+          </select>
+        </label>
+      </div>
+      <div class="control-block">
+        <label
+          ><b>Кількість цвяхів</b><br />
+          <input
+            type="number"
+            id="nails-count-box"
+            value="280"
+            min="50"
+            max="1000"
+            disabled
+          />
+        </label>
+      </div>
+    </div>
+
+    <!-- Лінії -->
+    <div class="control-group">
+      <h3>Лінії</h3>
+      <div class="control-block">
+        <label
+          ><b>Кількість ліній</b><br />
+          <input
+            type="number"
+            id="lines-count-box"
+            value="3400"
+            min="100"
+            max="10000"
+            disabled
+          />
+        </label>
+      </div>
+      <div class="control-block">
+        <label
+          ><b>Непрозорість лінії</b><br />
+          <input
+            type="range"
+            id="lines-weight-box"
+            value="10"
+            min="1"
+            max="100"
+            disabled
+          />
+        </label>
+      </div>
+      <div class="control-block inline">
+        <label for="lines-color-box"><b>Колір лінії</b></label>
+        <input type="color" id="lines-color-box" value="#000000" disabled />
+      </div>
+    </div>
+
+    <!-- Фон -->
+    <div class="control-group">
+      <h3>Фон</h3>
+      <div class="control-block inline">
+        <label for="background-color-box"><b>Колір фону</b></label>
+        <input
+          type="color"
+          id="background-color-box"
+          value="#ffffff"
+          disabled
+        />
+      </div>
+    </div>
+
+    <!-- Інформаційний блок -->
+    <div class="control-group">
+      <h3>Інформація</h3>
+      <div id="info-box"></div>
+      <div id="status-box"></div>
+    </div>
+  </div>
+</div>

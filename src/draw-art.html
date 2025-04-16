@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Art Bot</title>
+    <link rel="icon" href="https://img.icons8.com/color/344/free-bsd.png" />
+
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <load ="partials/header.html" />
+      <section class="flex draw-section">
+        <load ="partials/draw/controls.html" />
+        <div>
+          <load ="partials/draw/params.html" />
+          <load ="partials/draw/canvas.html" />
+          <load ="partials/draw/progress.html" />
+        </div>
+      </section>
+      <load ="partials/footer.html" />
+    </div>
+
+    <script src="./js/draw/string-art-bot.js" type="module"></script>
+    <script src="./js/draw/player.js" type="module"></script>
+  </body>
+</html>

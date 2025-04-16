@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Генератор зображеннь</title>
+    <link rel="icon" href="https://img.icons8.com/color/344/free-bsd.png" />
+
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <load ="partials/header.html" />
+
+      <div class="auth-container">
+        <form id="login-form" class="auth-form">
+          <h2 class="form-title">Login</h2>
+          <label for="login-email" class="form-label">Email:</label>
+          <input
+            type="email"
+            id="login-email"
+            name="login-email"
+            class="form-input"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="login-password" class="form-label">Password:</label>
+          <input
+            type="password"
+            id="login-password"
+            name="login-password"
+            class="form-input"
+            placeholder="Enter your password"
+            required
+          />
+
+          <button type="submit" class="form-button">Login</button>
+
+          <p class="form-footer">
+            Don't have an account?
+            <a href="register.html" class="register-link">Register here</a>
+          </p>
+        </form>
+      </div>
+
+      <load ="partials/footer.html" />
+    </div>
+
+    <script src="./js/auth/login.js" type="module"></script>
+  </body>
+</html>

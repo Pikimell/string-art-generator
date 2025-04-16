@@ -1,21 +1,24 @@
 {
-  "name": "stringartapp",
-  "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "string-art",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
-  },
-  "dependencies": {
-    "expo": "~49.0.15",
-    "expo-status-bar": "~1.6.0",
-    "react": "18.2.0",
-    "react-native": "0.72.6"
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "glob": "^8.1.0",
+    "vite": "^5.3.5",
+    "vite-plugin-static-copy": "^1.0.6"
   },
-  "private": true
+  "author": "Volodymyr Pashchenko <volodkaposhta@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^11.2.0",
+    "hash-it": "^6.0.0",
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-html-inject": "^1.0.1"
+  }
 }

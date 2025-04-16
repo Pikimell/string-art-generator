@@ -1,0 +1,165 @@
+/* Основний контейнер */
+.draw-controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-medium); /* Середній відступ */
+  font-family: var(--font-primary); /* Основний шрифт */
+  max-width: 300px;
+  padding: var(--spacing-large); /* Великий відступ */
+  background-color: var(--color-background); /* Фон */
+  border: 1px solid var(--color-border); /* Колір бордерів */
+  border-radius: var(--border-radius-medium); /* Середній радіус */
+  box-shadow: var(--box-shadow-medium); /* Середня тінь */
+}
+
+/* Стилі для форм */
+.form-data {
+  margin-bottom: var(--spacing-medium); /* Середній відступ */
+  padding: var(--spacing-medium); /* Середній відступ */
+  background-color: var(--bg-color-secondary); /* Білий фон */
+  border: 1px solid var(--color-border); /* Колір бордерів */
+  border-radius: var(--border-radius-medium); /* Середній радіус */
+  box-shadow: var(--box-shadow-light); /* Легка тінь */
+  z-index: 10000;
+}
+
+/* Поля вводу */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: var(--spacing-small); /* Маленький відступ */
+  margin-bottom: var(--spacing-small); /* Маленький відступ */
+  font-size: var(--font-size-small); /* Маленький розмір шрифту */
+  border: 1px solid var(--color-border); /* Колір бордерів */
+  border-radius: var(--border-radius-small); /* Малий радіус */
+  box-sizing: border-box;
+  background-color: var(--bg-color-secondary); /* Білий фон */
+}
+
+/* Чекбокси */
+.js-visible-canvas {
+  margin-left: var(--spacing-small); /* Маленький відступ */
+  cursor: pointer;
+}
+
+/* Кнопки */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-small) var(--spacing-medium); /* Маленький і середній відступи */
+  font-size: var(--font-size-small); /* Маленький розмір шрифту */
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid var(--primary-color);
+  background-color: none;
+  border-radius: var(--border-radius-small); /* Малий радіус */
+  cursor: pointer;
+  transition: background-color var(--transition-speed-medium); /* Середній перехід */
+  width: 100%;
+}
+
+.btn:hover {
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--font-color-primary); /* Основний колір шрифту */
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent);
+}
+
+/* Контейнер для кнопок */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-medium); /* Середній відступ */
+}
+
+.button-container .btn {
+  flex: 1;
+  margin: 0 var(--spacing-small); /* Маленький відступ */
+}
+
+/* Інпут для файлів */
+.js-audio {
+  margin-bottom: var(--spacing-small); /* Маленький відступ */
+  padding: var(--spacing-small); /* Маленький відступ */
+  font-size: var(--font-size-small); /* Маленький розмір шрифту */
+  border: 1px solid var(--color-border); /* Колір бордерів */
+  border-radius: var(--border-radius-small); /* Малий радіус */
+  background-color: var(--color-background); /* Фон */
+}
+
+/* Аудіо плеєр */
+.js-player {
+  width: 100%;
+  margin-top: var(--spacing-small); /* Маленький відступ */
+  border-radius: var(--border-radius-small); /* Малий радіус */
+}
+
+/* Текстове поле */
+textarea.form-control {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Форматування заголовків і лейблів */
+label {
+  font-size: var(--font-size-small); /* Маленький розмір шрифту */
+  font-weight: bold;
+  color: var(--color-text); /* Основний текст */
+  margin-bottom: var(--spacing-small); /* Маленький відступ */
+  display: block;
+}
+
+/* !============================================= */
+.draw-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.draw-section > div {
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  gap: 10px;
+  background-color: var(--color-background); /* Фон */
+  border: 1px solid var(--color-border); /* Колір бордерів */
+  border-radius: var(--border-radius-medium); /* Середній радіус */
+  box-shadow: var(--box-shadow-medium); /* Середня тінь */
+}
+
+.draw-canvas {
+  position: relative;
+  font-family: var(--font-primary); /* Основний шрифт */
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.draw-canvas .canvas {
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  top: 5%;
+  aspect-ratio: 1 / 1;
+}
+
+.draw-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch !important;
+}
+
+.inline p {
+  white-space: nowrap;
+}
+
+.progress-bar {
+  width: 90%;
+  height: 50px;
+}

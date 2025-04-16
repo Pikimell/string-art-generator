@@ -1,0 +1,88 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  justify-content: center;
+}
+
+.list .card {
+  width: 250px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.list .card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.list .card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.list .progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.list .progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease-in-out;
+}
+
+.list .card button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.list .card button:hover {
+  background-color: #0056b3;
+}
+
+.empty-placeholder {
+  width: 100%;
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 32px;
+  text-align: center;
+  color: #666;
+}
+
+.empty-placeholder img {
+  opacity: 0.6;
+  margin-bottom: 16px;
+}
+
+.empty-placeholder h2 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #333;
+}
+
+.empty-placeholder p {
+  font-size: 14px;
+  color: #777;
+}

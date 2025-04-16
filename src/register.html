@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Генератор зображеннь</title>
+    <link rel="icon" href="https://img.icons8.com/color/344/free-bsd.png" />
+
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <load ="partials/header.html" />
+
+      <div class="auth-container">
+        <form id="register-form" class="auth-form js-auth-form">
+          <h2 class="form-title">Register</h2>
+          <label for="register-email" class="form-label">Email:</label>
+          <input
+            type="email"
+            id="register-email"
+            name="email"
+            class="form-input"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="register-password" class="form-label">Password:</label>
+          <input
+            type="password"
+            id="register-password"
+            name="password"
+            class="form-input"
+            placeholder="Enter your password"
+            required
+          />
+
+          <label for="register-confirm-password" class="form-label"
+            >Confirm Password:</label
+          >
+          <input
+            type="password"
+            id="register-confirm-password"
+            name="confirmPassword"
+            class="form-input"
+            placeholder="Confirm your password"
+            required
+          />
+
+          <button type="submit" class="form-button">Register</button>
+
+          <p class="form-footer">
+            Already have an account?
+            <a href="login.html" class="login-link">Login here</a>
+          </p>
+        </form>
+      </div>
+
+      <load ="partials/footer.html" />
+    </div>
+
+    <script src="./js/auth/register.js" type="module"></script>
+  </body>
+</html>

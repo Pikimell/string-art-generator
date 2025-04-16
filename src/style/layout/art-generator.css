@@ -1,0 +1,24 @@
+.art-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.art-generator {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: var(--spacing-medium);
+}
+
+.art-content {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  flex-direction: column;
+}
+
+.progress {
+  width: 100%;
+  height: 50px;
+}

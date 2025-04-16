@@ -1,0 +1,21 @@
+/* BASE */
+@import './base/common.css';
+@import './base/container.css';
+
+/* UTILS */
+@import './utils/reset.css';
+@import './utils/variables.css';
+
+/* CUSTOM */
+@import './custom/checkbox.css';
+
+/* LAYOUT */
+@import './layout/home.css';
+@import './layout/stringbot.css';
+@import './layout/header.css';
+@import './layout/art-generator.css';
+@import './layout/canvas.css';
+@import './layout/controls.css';
+@import './layout/top-menu.css';
+@import './layout/auth.css';
+@import './layout/draw-params.css';

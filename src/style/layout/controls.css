@@ -1,0 +1,127 @@
+/* Загальний стиль для основного контейнера */
+.main-controls {
+  font-family: var(--font-primary); /* Основний шрифт */
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--spacing-large); /* Великий відступ */
+  background-color: var(--color-background); /* Фон */
+  border: 1px solid var(--color-border); /* Колір бордерів */
+  border-radius: var(--border-radius-medium); /* Середній радіус */
+  box-shadow: var(--box-shadow-medium); /* Середня тінь */
+  overflow: auto;
+}
+
+/* Стиль для груп елементів */
+.control-group {
+  margin-bottom: var(--spacing-medium); /* Середній відступ */
+  padding: var(--spacing-medium); /* Середній відступ */
+  background-color: var(--bg-color-secondary); /* Білий фон */
+  border: 1px solid var(--color-border); /* Колір бордерів */
+  border-radius: var(--border-radius-medium); /* Середній радіус */
+  box-shadow: var(--box-shadow-light); /* Легка тінь */
+
+  height: 70px;
+  overflow: hidden;
+}
+
+.control-group.opened {
+  height: fit-content;
+  overflow: auto;
+}
+
+/* Заголовки для груп */
+.control-group h3 {
+  font-size: var(--font-size-large); /* Великий розмір шрифту */
+  font-weight: bold;
+  color: var(--color-text); /* Основний текст */
+  margin-bottom: var(--spacing-small); /* Маленький відступ */
+  border-bottom: 1px solid var(--color-border); /* Колір бордерів */
+  padding-bottom: var(--spacing-small); /* Маленький відступ */
+  cursor: pointer;
+}
+
+/* Контейнери для елементів управління */
+.control-block {
+  margin-bottom: var(--spacing-medium); /* Середній відступ */
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-small); /* Маленький відступ */
+}
+
+.inline > * {
+  margin: 0;
+  padding: var(--spacing-small); /* Маленький відступ */
+}
+
+/* Поля вводу */
+input,
+select {
+  width: 100%;
+  padding: var(--spacing-small); /* Маленький відступ */
+  margin-top: var(--spacing-small); /* Маленький відступ */
+  font-size: var(--font-size-small); /* Маленький розмір шрифту */
+  border: 1px solid var(--color-border); /* Колір бордерів */
+  border-radius: var(--border-radius-small); /* Малий радіус */
+  box-sizing: border-box;
+}
+
+/* Поля вводу з кольором */
+input[type='color'] {
+  width: 50px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* Лейбли */
+label {
+  font-size: var(--font-size-small); /* Маленький розмір шрифту */
+  color: var(--color-text); /* Основний текст */
+  display: block;
+  margin-bottom: var(--spacing-small); /* Маленький відступ */
+}
+
+/* Лейбли для чекбоксів */
+label[for] {
+  display: inline-block;
+  margin-left: var(--spacing-small); /* Маленький відступ */
+}
+
+/* Підписи для слайдерів */
+.range-label {
+  font-size: var(--font-size-small); /* Маленький розмір шрифту */
+  color: var(--color-text-light); /* Світлий текст */
+  margin-top: var(--spacing-small); /* Маленький відступ */
+}
+
+/* Кнопки і активні елементи */
+input:disabled,
+select:disabled {
+  background-color: var(--color-background); /* Фон */
+  color: var(--color-text-light); /* Світлий текст */
+  cursor: not-allowed;
+}
+
+/* Відступи між елементами */
+.control-block:not(:last-child) {
+  margin-bottom: var(--spacing-medium); /* Середній відступ */
+}
+
+/* Блок інформації */
+#info-box {
+  padding: var(--spacing-small); /* Маленький відступ */
+  font-size: var(--font-size-small); /* Маленький розмір шрифту */
+  background-color: #e9f7ef; /* Зелений фон (можна додати змінну за потреби) */
+  border: 1px solid #a8d5ba; /* Зелений бордер (можна додати змінну за потреби) */
+  border-radius: var(--border-radius-small); /* Малий радіус */
+  color: #3c763d; /* Колір тексту (можна додати змінну за потреби) */
+}
+
+audio:hover {
+  width: 500px;
+}

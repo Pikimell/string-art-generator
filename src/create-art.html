@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Генератор зображеннь</title>
+    <link rel="icon" href="https://img.icons8.com/color/344/free-bsd.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simple-notify/dist/simple-notify.css"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <load ="partials/header.html" />
+
+      <section class="art-container">
+        <div class="art-generator">
+          <load ="partials/generate/controls.html" />
+          <div class="art-content">
+            <load ="partials/generate/top-menu.html" />
+            <load ="partials/generate/canvas.html" />
+            <load ="partials/generate/generator.html" />
+            <load ="partials/generate/loader.html" />
+          </div>
+        </div>
+      </section>
+
+      <load ="partials/footer.html" />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/simple-notify/dist/simple-notify.min.js"></script>
+    <script src="./js/generate/constants.js"></script>
+    <script src="./js/generate/string_art_generator.js"></script>
+    <script src="./js/generate/main.js"></script>
+  </body>
+</html>

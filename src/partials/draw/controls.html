@@ -1,0 +1,80 @@
+<section class="draw-controls">
+  <button type="submit" class="btn js-load">Завантажити з файлу</button>
+  <form class="form-data js-form">
+    <label class="checkbox-container">
+      <div class="checkbox-wrapper-45">
+        <input id="cbx-45" type="checkbox" class="js-visible-canvas" checked />
+        <label class="cbx" for="cbx-45">
+          <div class="flip">
+            <div class="front"></div>
+            <div class="back">
+              <svg width="16" height="14" viewBox="0 0 16 14">
+                <path d="M2 8.5L6 12.5L14 1.5"></path>
+              </svg>
+            </div>
+          </div>
+        </label>
+      </div>
+      <p>Малювати лінії</p>
+    </label>
+
+    <textarea
+      name="data"
+      class="form-control"
+      placeholder="Завантажте сюди піни з файлу"
+    ></textarea>
+    <button type="submit" name="send" class="btn">Завантажити</button>
+  </form>
+
+  <form class="form-data js-form1">
+    <input
+      type="number"
+      name="point"
+      class="form-control"
+      placeholder="Пін №"
+    />
+    <input
+      type="number"
+      name="count"
+      class="form-control"
+      placeholder="Кількість цвяхів"
+    />
+    <input
+      type="number"
+      name="delay"
+      class="form-control"
+      placeholder="Інтервал в секундах"
+    />
+    <button type="submit" class="btn">Застосувати</button>
+  </form>
+
+  <div class="form-data">
+    <div class="control-block">
+      <label
+        ><b>Гучність помічника</b><br />
+        <input
+          type="range"
+          class="js-volume form-control"
+          min="0"
+          max="1"
+          step="0.01"
+          value="0.1"
+        />
+      </label>
+    </div>
+    <label><b>Плеєр</b><br /></label>
+    <audio class="js-player" controls loop>
+      <a href="#" id="download-link"> Завантажити </a>
+    </audio>
+    <input type="file" class="js-audio form-control" multiple />
+    <!-- Кнопки керування -->
+    <div class="fb button-container audio-controls">
+      <button class="btn js-prev-track" data-value="prev">«</button>
+      <button class="btn js-next-track" data-value="next">»</button>
+    </div>
+  </div>
+  <div class="fb button-container js-btn">
+    <button class="btn" data-value="prev">Попередній</button>
+    <button class="btn" data-value="next">Наступний</button>
+  </div>
+</section>
